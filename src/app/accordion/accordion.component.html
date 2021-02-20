@@ -1,0 +1,33 @@
+<div class="accordion">
+    <h1>SOBRE MÍ</h1>
+    <ngb-accordion [destroyOnHide]='false' [closeOthers]="true">
+        <ngb-panel type="dark" id="panel1">
+            <ng-template ngbPanelTitle>
+                <span>Información personal </span>
+            </ng-template>
+            <ng-template ngbPanelContent>
+                <p>Tengo {{ age }} años, vivo en la ciudad de Bogotá D.C junto con mis papás y hermanos. </p>
+            </ng-template>
+        </ngb-panel>
+
+
+        <ngb-panel type="dark" activeIds="panel2">
+            <ng-template ngbPanelTitle>
+                <span>Estudios </span>
+            </ng-template>
+            <ng-template ngbPanelContent>
+                Actualmente estudio en la {{ university }}, ingeniería y estoy cursando quinto semestre.
+            </ng-template>
+        </ngb-panel>
+
+
+        <ngb-panel type="dark" activeIds="panel3">
+            <ng-template ngbPanelTitle>
+                <span>Hobbies </span>
+            </ng-template>
+            <ng-template ngbPanelContent>
+                Me  gusta mucho dibujar,escuchar música,ver partidos con mi familia , leer y ver series.
+            </ng-template>
+        </ngb-panel>
+    </ngb-accordion>
+</div>
